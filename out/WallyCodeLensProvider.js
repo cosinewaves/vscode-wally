@@ -39,7 +39,6 @@ class WallyCodeLensProvider {
     onDidChangeEmitter = new vscode.EventEmitter();
     onDidChangeCodeLenses = this.onDidChangeEmitter.event;
     provideCodeLenses(document) {
-        console.log("Wally CodeLens provider running");
         const lenses = [];
         const text = document.getText();
         const lines = text.split(/\r?\n/);
@@ -48,7 +47,7 @@ class WallyCodeLensProvider {
                 const position = new vscode.Position(i, 0);
                 const range = new vscode.Range(position, position);
                 lenses.push(new vscode.CodeLens(range, {
-                    title: "Install",
+                    title: "Install Dependencies",
                     command: "wally.install",
                     arguments: [document.uri]
                 }));

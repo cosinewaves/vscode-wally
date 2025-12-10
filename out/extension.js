@@ -38,9 +38,11 @@ const vscode = __importStar(require("vscode"));
 const WallyCodeLensProvider_1 = require("./WallyCodeLensProvider");
 function activate(context) {
     const selector = { language: 'toml', pattern: '**/wally.toml' };
+    // add a code lens provider
     context.subscriptions.push(vscode.languages.registerCodeLensProvider(selector, new WallyCodeLensProvider_1.WallyCodeLensProvider()));
+    // register a command to allow the code lens button to work in files
     context.subscriptions.push(vscode.commands.registerCommand("wally.install", async (uri) => {
-        const terminal = vscode.window.createTerminal("Wally");
+        const terminal = vscode.window.createTerminal("vscode-wally");
         terminal.show();
         terminal.sendText("wally install");
     }));
