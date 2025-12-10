@@ -1,4 +1,5 @@
 {
+  "publisher": "cosinewaves",
   "name": "vscode-wally",
   "displayName": "vscode-wally",
   "description": "Provides a code-lens style install button for managing Wally dependencies",
@@ -6,14 +7,21 @@
   "engines": {
     "vscode": "^1.107.0"
   },
+  "license": "MIT",
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "wally",
+    "roblox"
   ],
   "activationEvents": [
     "onLanguage:toml",
     "onFileSystem:file"
   ],
-  "publisher": "cosinewaves",
+  "bugs": {
+    "url": "https://github.com/cosinewaves/vscode-wally/issues"
+  },
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -49,6 +57,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cosinewaves/vscode-wally.git"
+    "url": "https://github.com/cosinewaves/vscode-wally"
   }
 }
