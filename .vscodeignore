@@ -10,3 +10,12 @@ vsc-extension-quickstart.md
 **/*.ts
 **/.vscode-test.*
 **/*.js.map
+*
+**/*
+!CHANGELOG.md
+!LICENSE.md
+!README.md
+!assets/*.png
+!assets/*.webp
+!dist/**/*
+!package.json
