@@ -12,10 +12,4 @@ vsc-extension-quickstart.md
 **/*.js.map
 *
 **/*
-!CHANGELOG.md
-!LICENSE.md
-!README.md
-!assets/*.png
-!assets/*.webp
-!dist/**/*
-!package.json
+
