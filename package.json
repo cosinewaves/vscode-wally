@@ -13,6 +13,7 @@
     "onLanguage:toml",
     "onFileSystem:file"
   ],
+  "publisher": "cosinewaves",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
